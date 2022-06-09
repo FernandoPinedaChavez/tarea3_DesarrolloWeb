@@ -1,4 +1,4 @@
-/* *{
+*{
     box-sizing: border-box;
     margin: 0;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -6,7 +6,7 @@
 
 body{
     width: min(90%, 1200px);
-    background-color: rgb(240, 237, 232);
+    background-color: rgb(149, 149, 149);
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,13 +19,11 @@ a{
     color: black;
     font-weight: 300;
 
-} */
+}
 
-
-
-/* header{
+header{
     width: 100%;
-    background-color: rgb(117, 146, 173);
+    background-color: rgb(7, 8, 8);
     margin-bottom: 2%;
     margin-top: 2%;
     display: flex;
@@ -38,50 +36,47 @@ header .header_logo{
 }
 header .header_logo img{
     width: 60px;
-    height: 60px;
-    
-} */
+    height: 60px; 
+}
 
 header .header_nombre{
     width: 75%; 
 }
 
 header .header_nombre h1{
-    color: rgb(7, 8, 8);
+    color: white; 
     text-align: center;
+
 }
-
-
 
 nav{
     width: 100%;
-    background-color: skyblue;
+    background-color: white;
     padding: 1%; 
 }
 
 nav ul{
-    list-style-type: none; /* quitar viñetas */
+    list-style-type: none;
     display: flex;
-   /* justify-content: space-around;*/
     margin: 0;
     padding: 5px;
 }
 
 nav ul li{
-    background-color: rgb(140, 146, 155);
+    background-color: rgb(128, 128, 128);
     flex: auto;
     text-align: center;
     padding: 5px;
 }
 
 nav ul li:hover{
-    background-color: rgb(40, 199, 199);
-    color: rgb(0, 255, 170);
+    background-color: rgb(216, 216, 216);
+    color: rgb(0, 0, 0);
     
 }
 
 nav ul li a:hover{
-    color: rgb(0, 255, 170);
+    color: rgb(95, 95, 95 );
 }
 
 @media screen and (max-width: 768px) {
@@ -90,29 +85,15 @@ nav ul li a:hover{
     }
 }
 
-.menu{
-    background-color: rgb(183, 222, 238);
-}
-
-.menu img{
-    width: 50%;
-    display: block;
-    margin: auto;
-    margin-top: 2%;
-    margin-bottom: 2%;
-  
-}
-
 h2{
     margin-top: 2%;
     text-align: center;
-    background-color: darkcyan;
-    padding: 1%;
+    background-color: white;
+    padding: 1%;  
 }
 
 h3{
     text-align: center;
-    background-color: skyblue;
     padding: 1%;
 }
 
@@ -120,12 +101,80 @@ h3{
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: center;
-    background-color: skyblue;
+    background-color: rgb(0, 0, 0);
 }
 
+.menu label {
+    display: none;
+    width: 30px;
+    height: 30px;
+    padding: 30px; 
+    border-right: 1px solid #fff;
+}
+
+.menu label:hover {
+    cursor: pointer; 
+    background: rgba(0,0,0,0.3); 
+
+}
+
+.menu ul {
+    margin: 0; 
+    list-style: none; 
+    padding: 0;
+    display: flex;
+    justify-content: flex; 
+    
+}
+.menu li {
+    border-right: 1px solif #fff;
+}
+
+.menu li:hover {
+    background: rgba(0 ,0 ,0 ,0.3); 
+
+}
+
+.menu li a {
+    display: block;
+    padding: 15px 20px; 
+    color: #fff; 
+    text-decoration: none;
+
+}
+
+.redes a img{
+    width: 60px;
+    height: 60px;
+    display: block;
+    margin: 0px auto;
+    flex-direction: row;
+}
+
+.btn_comentario h4 {
+    width: 50%; 
+    text-align: center;
+    display: block;
+    margin: 2px auto;
+    background-color: rgb(195, 195, 195);
+}
+
+.btn_comentario:hover h4 {
+    cursor: pointer; 
+    background-color: white;
+}
+
+.diccionario h3 {
+    text-align: left;
+}
+
+.diccionario h1 {
+    text-align: center;
+} 
 footer{
     width: 100%;
-    background-color: rgb(151, 146, 180);
+    background-color: rgb(0, 0, 0);
+    color:white;
     text-align: center;
     margin-top: 2%;
     padding: 1%;
